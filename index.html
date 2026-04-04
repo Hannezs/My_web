@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hannes Zhang</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦾</text></svg>">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Homepage</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="微信图片_20260404133447_152_43.jpg" alt="My Avatar" class="hero-avatar">
+            <h2 class="modern-title">Hannes Zhang 「张誉怀」</h2>
+        </div>
+        
+        
+        <!-- 静态工业风机械臂（侧视图） -->
+        <div class="industrial-robot-container">
+            <!-- 工业无人机 -->
+            <div class="ind-drone">
+                <div class="drone-arm front"></div>
+                <div class="drone-arm back"></div>
+                <div class="drone-body"></div>
+                <div class="drone-motor front-motor"><div class="drone-blade"></div></div>
+                <div class="drone-motor back-motor"><div class="drone-blade"></div></div>
+                <div class="drone-cam"></div>
+                <div class="drone-leg left"><div class="drone-skid"></div></div>
+                <div class="drone-leg right"><div class="drone-skid"></div></div>
+            </div>
+
+            <!-- 工业智能眼镜（正视图） -->
+            <div class="ind-glasses">
+                <!-- 镜腿往后延伸产生的透视感 -->
+                <div class="glasses-temple left-temple"></div>
+                <div class="glasses-temple right-temple"></div>
+                <!-- 鼻托/相连鼻架 -->
+                <div class="glasses-bridge"></div>
+                <!-- 左镜框与镜片 -->
+                <div class="glasses-frame left-frame">
+                    <div class="glasses-lens"></div>
+                </div>
+                <!-- 右镜框与镜片，包含工作模组(红灯点) -->
+                <div class="glasses-frame right-frame">
+                    <div class="glasses-lens"></div>
+                    <div class="glasses-hub"></div>
+                </div>
+            </div>
+
+            <!-- 机械臂主体 -->
+            <div class="ind-arm-group">
+                <div class="ind-base"></div>
+                <div class="ind-base-mount"></div>
+                <div class="ind-shoulder">
+                    <div class="ind-joint-center"></div>
+                    <div class="ind-lower-arm">
+                        <div class="ind-arm-detail"></div>
+                        <div class="ind-elbow">
+                            <div class="ind-joint-center"></div>
+                            <div class="ind-upper-arm">
+                                <div class="ind-wrist">
+                                    <div class="ind-joint-center small"></div>
+                                    <div class="ind-gripper-base">
+                                        <div class="ind-finger top-finger"></div>
+                                        <div class="ind-finger bottom-finger"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section id="about" class="section about">
+        <h2 class="section-title">About Me</h2>
+        <div class="card about-card">
+            <p class="intro-text">
+                I am a third-year student majoring in <strong>Computer Science and Technology</strong> at <strong>Fuzhou University</strong>,
+                passionate about embodied intelligence, computer vision, and human-computer interaction. 
+                I am currently working towards applying for a graduate program at <strong>TUM</strong>.
+            </p>
+            <div class="about-details">
+                <div class="detail-item">
+                    <h4>Hobbies</h4>
+                    <p>I love <strong>football</strong> and am currently a national first-class athlete and UEFA-certified coach.
+                        I am also passionate about <strong>robotics and AI technologies</strong>. In the near future, I plan to build my own robotic arm and AI glasses.</p>
+                </div>
+                <div class="detail-item">
+                    <h4>Goal</h4>
+                    <p>Hope to achieve cross-border innovation with <strong>"AI+" and "Robotics+"</strong>, creating more interesting works.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section id="projects" class="section projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>星空生成器</h3>
+                <p>一个利用WebGL生成的动态星空交互艺术作品。</p>
+            </div>
+            <div class="project-card">
+                <h3>时间碎片</h3>
+                <p>探索时间流逝的可视化数据项目。</p>
+            </div>
+            <div class="project-card">
+                <h3>梦境日记</h3>
+                <p>基于插画的个人日记本，记录光怪陆离的梦境。</p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section id="contact" class="section contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-card">
+            <p>Let's work together to bring your ideas to life!</p>
+            <a href="mailto:hello@example.com" class="btn">Send a Message</a>
+            <div class="social-links">
+                <a href="https://github.com/Hannezs" target="_blank">GitHub</a>
+                <a href="mailto:yuhuaizhang01@163.com" target="_blank">Email</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Hannes Zhang. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
