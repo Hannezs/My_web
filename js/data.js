@@ -23,5 +23,11 @@ export const projectsData = [
         description: "An autonomous drone flight control system based on AirSim and deep learning. Integrates YOLOv8 for real-time visual perception and PID controllers for state machine-driven obstacle avoidance.",
         techStack: ["Python", "AirSim", "YOLOv8", "OpenCV", "PID Control"],
         link: "https://github.com/Hannezs/uav-vision-obstacle-avoidance"
+    },
+    {
+        title: "Personal Portfolio Website",
+        description: "The very website you are browsing! A lightweight, fast, and data-driven portfolio designed with a clean academic aesthetic. Features responsive layouts and pure CSS industrial animations.",
+        techStack: ["Vanilla JS", "Tailwind CSS", "Vite", "DaisyUI"],
+        link: "https://github.com/Hannezs/My_web"
     }
 ];
