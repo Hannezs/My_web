@@ -7,26 +7,14 @@
     <meta name="author" content="Hannes Zhang">
     <title>Hannes Zhang - Portfolio</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦾</text></svg>">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.1/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['-apple-system', 'BlinkMacSystemFont', '"SF Pro Text"', '"SF Pro Display"', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 <body class="bg-base-200 text-base-content font-sans antialiased selection:bg-primary selection:text-primary-content">
     <nav class="fixed top-0 left-0 w-full z-[1000] bg-base-100/70 backdrop-blur-xl border-b border-base-200/50 transition-all duration-300">
         <ul class="flex justify-center gap-4 md:gap-8 py-4 m-0 list-none text-sm md:text-base">
             <li><a href="#home" class="text-base-content/70 hover:text-base-content font-medium transition-colors" aria-label="Go to Homepage">Homepage</a></li>
             <li><a href="#about" class="text-base-content/70 hover:text-base-content font-medium transition-colors" aria-label="Go to About Me">About Me</a></li>
+            <li><a href="#publications" class="text-base-content/70 hover:text-base-content font-medium transition-colors" aria-label="Go to Publications">Publications</a></li>
             <li><a href="#projects" class="text-base-content/70 hover:text-base-content font-medium transition-colors" aria-label="Go to Projects">Projects</a></li>
             <li><a href="#contact" class="text-base-content/70 hover:text-base-content font-medium transition-colors" aria-label="Go to Contact">Contact</a></li>
         </ul>
@@ -34,7 +22,7 @@
 
     <section id="home" class="min-h-screen flex flex-col items-center justify-center text-center pt-24 px-4 overflow-hidden relative">
         <div class="z-10 flex flex-col items-center">
-            <img src="微信图片_20260404133447_152_43.jpg" alt="Portrait of Hannes Zhang" class="w-40 h-40 md:w-48 md:h-48 object-cover rounded-full md:rounded-[2rem] mb-6 border-4 border-base-100 shadow-2xl bg-base-300 transition-transform duration-500 hover:scale-105">
+            <img src="/images/profile.jpg" alt="Portrait of Hannes Zhang" class="w-40 h-40 md:w-48 md:h-48 object-cover rounded-full md:rounded-[2rem] mb-6 border-4 border-base-100 shadow-2xl bg-base-300 transition-transform duration-500 hover:scale-105">
             <h1 class="text-5xl md:text-7xl font-bold tracking-tight text-base-content mb-4">Hannes Zhang</h1>
             <h2 class="text-2xl font-medium text-base-content/60">「张誉怀」</h2>
         </div>
@@ -125,13 +113,19 @@
 
     <div class="divider max-w-4xl mx-auto my-8 md:my-16 opacity-0 transform translate-y-8 transition-all duration-700 ease-out" data-reveal></div>
 
-    <section id="projects" class="min-h-[60vh] flex flex-col items-center justify-center py-24 px-4 overflow-hidden">
+    <section id="publications" class="min-h-[60vh] flex flex-col items-center py-24 px-4 overflow-hidden">
+        <h2 class="text-4xl font-semibold mb-12 text-base-content tracking-tight opacity-0 transform translate-y-8 transition-all duration-700 ease-out" data-reveal>Publications</h2>
+        <div class="w-full max-w-4xl flex flex-col gap-8" id="publications-container">
+            <!-- Publications will be rendered here from js/data.js -->
+        </div>
+    </section>
+
+    <div class="divider max-w-4xl mx-auto my-8 md:my-16 opacity-0 transform translate-y-8 transition-all duration-700 ease-out" data-reveal></div>
+
+    <section id="projects" class="min-h-[60vh] flex flex-col items-center py-24 px-4 overflow-hidden">
         <h2 class="text-4xl font-semibold mb-12 text-base-content tracking-tight opacity-0 transform translate-y-8 transition-all duration-700 ease-out" data-reveal>Projects</h2>
-        <div class="card bg-base-100/70 backdrop-blur-xl shadow-xl border border-base-200/50 rounded-[2rem] max-w-4xl w-full opacity-0 transform translate-y-8 transition-all duration-700 ease-out" data-reveal>
-            <div class="card-body p-8 md:p-12 text-center">
-                <h3 class="text-2xl font-bold mb-4 text-base-content">Coming Soon...</h3>
-                <p class="text-base-content/60 text-lg">Exciting projects are on their way!</p>
-            </div>
+        <div class="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-8" id="projects-container">
+            <!-- Projects will be rendered here from js/data.js -->
         </div>
     </section>
 
@@ -157,6 +151,6 @@
         </aside>
     </footer>
 
-    <script src="script.js"></script>
+    <script type="module" src="/js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,6 @@
+/* 导入原有自定义样式 */
+@import './style.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
