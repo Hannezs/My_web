@@ -19,15 +19,15 @@ export const publicationsData = [
 
 export const projectsData = [
     {
+        title: "Knowledge Graph & RAG System",
+        description: "An intelligent Q&A and semantic extraction system combining Knowledge Graphs and Retrieval-Augmented Generation (RAG). Supports document upload, automated entity-relation extraction via LLMs, and natural language Q&A powered by vector databases.",
+        techStack: ["Vue 3", "FastAPI", "Milvus", "LLMs", "RAG"],
+        link: "https://github.com/Hannezs/Knowledge-Graph-RAG-System"
+    },
+    {
         title: "UAV Vision-Based Obstacle Avoidance",
         description: "An autonomous drone flight control system based on AirSim and deep learning. Integrates YOLOv8 for real-time visual perception and PID controllers for state machine-driven obstacle avoidance.",
         techStack: ["Python", "AirSim", "YOLOv8", "OpenCV", "PID Control"],
         link: "https://github.com/Hannezs/uav-vision-obstacle-avoidance"
-    },
-    {
-        title: "Industrial Robotic Arm Simulation",
-        description: "A lightweight web-based simulator for industrial robotic arms using WebGL and pure CSS.",
-        techStack: ["CSS3", "JavaScript", "Three.js"],
-        link: "#"
     }
 ];
