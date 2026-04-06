@@ -19,6 +19,12 @@ export const publicationsData = [
 
 export const projectsData = [
     {
+        title: "Stanford CS231n Solutions",
+        description: "Comprehensive solutions to Stanford's Deep Learning for Computer Vision course (CS231n) programming assignments. Implementations include CNNs, RNNs, Attention Mechanisms, and Generative Models using PyTorch and NumPy.",
+        techStack: ["Python", "PyTorch", "NumPy", "Deep Learning", "Computer Vision"],
+        link: "https://github.com/Hannezs/cs231n-solutions"
+    },
+    {
         title: "Knowledge Graph & RAG System",
         description: "An intelligent Q&A and semantic extraction system combining Knowledge Graphs and Retrieval-Augmented Generation (RAG). Supports document upload, automated entity-relation extraction via LLMs, and natural language Q&A powered by vector databases.",
         techStack: ["Vue 3", "FastAPI", "Milvus", "LLMs", "RAG"],
