@@ -19,6 +19,12 @@ export const publicationsData = [
 
 export const projectsData = [
     {
+        title: "UAV Vision-Based Obstacle Avoidance",
+        description: "An autonomous drone flight control system based on AirSim and deep learning. Integrates YOLOv8 for real-time visual perception and PID controllers for state machine-driven obstacle avoidance.",
+        techStack: ["Python", "AirSim", "YOLOv8", "OpenCV", "PID Control"],
+        link: "https://github.com/Hannezs/uav-vision-obstacle-avoidance"
+    },
+    {
         title: "Industrial Robotic Arm Simulation",
         description: "A lightweight web-based simulator for industrial robotic arms using WebGL and pure CSS.",
         techStack: ["CSS3", "JavaScript", "Three.js"],
