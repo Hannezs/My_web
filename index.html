@@ -1,28 +1,43 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-theme="lofi" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hannes Zhang</title>
+    <meta name="description" content="Portfolio of Hannes Zhang, a Computer Science student passionate about embodied intelligence, computer vision, and HCI.">
+    <meta name="author" content="Hannes Zhang">
+    <title>Hannes Zhang - Portfolio</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦾</text></svg>">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['-apple-system', 'BlinkMacSystemFont', '"SF Pro Text"', '"SF Pro Display"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <nav class="navbar">
-        <ul>
-            <li><a href="#home">Homepage</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+<body class="bg-base-200 text-base-content font-sans antialiased selection:bg-primary selection:text-primary-content">
+    <nav class="fixed top-0 left-0 w-full z-[1000] bg-base-100/70 backdrop-blur-xl border-b border-base-200/50 transition-all duration-300">
+        <ul class="flex justify-center gap-4 md:gap-8 py-4 m-0 list-none text-sm md:text-base">
+            <li><a href="#home" class="text-base-content/70 hover:text-base-content font-medium transition-colors" aria-label="Go to Homepage">Homepage</a></li>
+            <li><a href="#about" class="text-base-content/70 hover:text-base-content font-medium transition-colors" aria-label="Go to About Me">About Me</a></li>
+            <li><a href="#projects" class="text-base-content/70 hover:text-base-content font-medium transition-colors" aria-label="Go to Projects">Projects</a></li>
+            <li><a href="#contact" class="text-base-content/70 hover:text-base-content font-medium transition-colors" aria-label="Go to Contact">Contact</a></li>
         </ul>
     </nav>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <img src="微信图片_20260404133447_152_43.jpg" alt="My Avatar" class="hero-avatar">
-            <h2 class="modern-title">Hannes Zhang 「张誉怀」</h2>
+    <section id="home" class="min-h-screen flex flex-col items-center justify-center text-center pt-24 px-4 overflow-hidden relative">
+        <div class="z-10 flex flex-col items-center">
+            <img src="微信图片_20260404133447_152_43.jpg" alt="Portrait of Hannes Zhang" class="w-40 h-40 md:w-48 md:h-48 object-cover rounded-full md:rounded-[2rem] mb-6 border-4 border-base-100 shadow-2xl bg-base-300 transition-transform duration-500 hover:scale-105">
+            <h1 class="text-5xl md:text-7xl font-bold tracking-tight text-base-content mb-4">Hannes Zhang</h1>
+            <h2 class="text-2xl font-medium text-base-content/60">「张誉怀」</h2>
         </div>
-        
         
         <!-- 静态工业风机械臂（侧视图） -->
         <div class="industrial-robot-container">
@@ -82,58 +97,64 @@
         </div>
     </section>
 
-    <hr class="section-divider">
+    <div class="divider max-w-4xl mx-auto my-8 md:my-16 opacity-0 transform translate-y-8 transition-all duration-700 ease-out" data-reveal></div>
 
-    <section id="about" class="section about">
-        <h2 class="section-title">About Me</h2>
-        <div class="card about-card">
-            <p class="intro-text">
-                I am a third-year student majoring in <strong>Computer Science and Technology</strong> at <strong>Fuzhou University</strong>,
-                passionate about embodied intelligence, computer vision, and human-computer interaction. 
-                I am currently working towards applying for a graduate program at <strong>TUM</strong>.
-            </p>
-            <div class="about-details">
-                <div class="detail-item">
-                    <h4>Hobbies</h4>
-                    <p>I love <strong>football</strong> and am currently a national first-class athlete and UEFA-certified coach.
-                        I am also passionate about <strong>robotics and AI technologies</strong>. In the near future, I plan to build my own robotic arm and AI glasses.</p>
+    <section id="about" class="min-h-[60vh] flex flex-col items-center py-24 px-4 overflow-hidden">
+        <h2 class="text-4xl font-semibold mb-12 text-base-content tracking-tight opacity-0 transform translate-y-8 transition-all duration-700 ease-out" data-reveal>About Me</h2>
+        <div class="card bg-base-100/70 backdrop-blur-xl shadow-xl border border-base-200/50 rounded-[2rem] max-w-4xl w-full opacity-0 transform translate-y-8 transition-all duration-700 ease-out" data-reveal>
+            <div class="card-body p-8 md:p-12 text-left">
+                <p class="text-xl leading-relaxed text-base-content/80 mb-8 font-medium">
+                    I am a third-year student majoring in <strong class="text-base-content">Computer Science and Technology</strong> at <strong class="text-base-content">Fuzhou University</strong>,
+                    passionate about embodied intelligence, computer vision, and human-computer interaction. 
+                    I am currently working towards applying for a graduate program at <strong class="text-base-content">TUM</strong>.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-8 border-t border-base-200/50">
+                    <div>
+                        <h4 class="text-sm font-bold uppercase tracking-wider text-base-content/50 mb-3">Hobbies</h4>
+                        <p class="text-base-content/80 text-lg">I love <strong class="text-base-content">football</strong> and am currently a national first-class athlete and UEFA-certified coach.
+                            I am also passionate about <strong class="text-base-content">robotics and AI technologies</strong>. In the near future, I plan to build my own robotic arm and AI glasses.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-bold uppercase tracking-wider text-base-content/50 mb-3">Goal</h4>
+                        <p class="text-base-content/80 text-lg">Hope to achieve cross-border innovation with <strong class="text-base-content">"AI+" and "Robotics+"</strong>, creating more interesting works.</p>
+                    </div>
                 </div>
-                <div class="detail-item">
-                    <h4>Goal</h4>
-                    <p>Hope to achieve cross-border innovation with <strong>"AI+" and "Robotics+"</strong>, creating more interesting works.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider max-w-4xl mx-auto my-8 md:my-16 opacity-0 transform translate-y-8 transition-all duration-700 ease-out" data-reveal></div>
+
+    <section id="projects" class="min-h-[60vh] flex flex-col items-center justify-center py-24 px-4 overflow-hidden">
+        <h2 class="text-4xl font-semibold mb-12 text-base-content tracking-tight opacity-0 transform translate-y-8 transition-all duration-700 ease-out" data-reveal>Projects</h2>
+        <div class="card bg-base-100/70 backdrop-blur-xl shadow-xl border border-base-200/50 rounded-[2rem] max-w-4xl w-full opacity-0 transform translate-y-8 transition-all duration-700 ease-out" data-reveal>
+            <div class="card-body p-8 md:p-12 text-center">
+                <h3 class="text-2xl font-bold mb-4 text-base-content">Coming Soon...</h3>
+                <p class="text-base-content/60 text-lg">Exciting projects are on their way!</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider max-w-4xl mx-auto my-8 md:my-16 opacity-0 transform translate-y-8 transition-all duration-700 ease-out" data-reveal></div>
+
+    <section id="contact" class="min-h-[60vh] flex flex-col items-center justify-center py-24 px-4 overflow-hidden">
+        <h2 class="text-4xl font-semibold mb-12 text-base-content tracking-tight opacity-0 transform translate-y-8 transition-all duration-700 ease-out" data-reveal>Contact</h2>
+        <div class="card bg-base-100/70 backdrop-blur-xl shadow-xl border border-base-200/50 rounded-[2rem] max-w-2xl w-full text-center p-8 md:p-12 opacity-0 transform translate-y-8 transition-all duration-700 ease-out" data-reveal>
+            <div class="card-body items-center p-0">
+                <p class="text-xl text-base-content/80 mb-10 font-medium">Let's work together to bring your ideas to life!</p>
+                <a href="mailto:yuhuaizhang01@163.com" class="inline-flex items-center justify-center px-10 py-4 bg-[#0071e3] hover:bg-[#0077ed] text-white rounded-full text-lg font-medium shadow-md hover:shadow-lg transition-all duration-300 hover:scale-[1.02] mb-10">Send a Message</a>
+                <div class="flex gap-8 justify-center">
+                    <a href="https://github.com/Hannezs" target="_blank" rel="noopener noreferrer" class="text-base-content/60 hover:text-[#0071e3] transition-colors font-medium">GitHub</a>
+                    <a href="mailto:yuhuaizhang01@163.com" class="text-base-content/60 hover:text-[#0071e3] transition-colors font-medium">Email</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <hr class="section-divider">
-
-    <section id="projects" class="section projects">
-        <h2 class="section-title">Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <h3></h3>
-                <p>Coming Soon...</p>
-            </div>
-        </div>
-    </section>
-
-    <hr class="section-divider">
-
-    <section id="contact" class="section contact">
-        <h2 class="section-title">Contact</h2>
-        <div class="contact-card">
-            <p>Let's work together to bring your ideas to life!</p>
-            <a href="mailto:hello@example.com" class="btn">Send a Message</a>
-            <div class="social-links">
-                <a href="https://github.com/Hannezs" target="_blank">GitHub</a>
-                <a href="mailto:yuhuaizhang01@163.com" target="_blank">Email</a>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Hannes Zhang. All rights reserved.</p>
+    <footer class="footer footer-center p-10 border-t border-base-200/50 text-base-content/60 mt-12 bg-base-100/50">
+        <aside>
+            <p>&copy; 2026 Hannes Zhang. All rights reserved.</p>
+        </aside>
     </footer>
 
     <script src="script.js"></script>
