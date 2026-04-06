@@ -584,3 +584,10 @@
 }
 
 .
+/* 移动设备侧处理这些组件 */
+@media (max-width: 768px) {
+    .industrial-robot-container {
+        display: none !important;
+    }
+}
+
