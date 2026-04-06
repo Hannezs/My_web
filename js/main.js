@@ -4,26 +4,35 @@ document.addEventListener('DOMContentLoaded', () => {
     // ---- Render Publications ----
     const pubContainer = document.getElementById('publications-container');
     if (pubContainer) {
-        publicationsData.forEach(pub => {
-            const el = document.createElement('div');
-            el.className = 'w-full flex flex-col md:flex-row gap-6 items-center p-6 bg-base-100/70 backdrop-blur-xl border border-base-200/50 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 opacity-0 transform translate-y-8';
-            el.setAttribute('data-reveal', 'true');
-            
-            const imgHTML = pub.image ? `<div class="shrink-0 w-full md:w-64 h-40 overflow-hidden rounded-xl border border-base-200"><img src="${pub.image}" alt="${pub.title}" class="w-full h-full object-cover"></div>` : '';
-            
-            const linksHTML = pub.links ? pub.links.map(l => `<a href="${l.url}" class="text-sm font-medium text-primary hover:underline hover:text-primary-focus mr-4 relative z-10 before:content-['['] after:content-[']']">${l.text}</a>`).join('') : '';
+        if (publicationsData && publicationsData.length > 0) {
+            publicationsData.forEach(pub => {
+                const el = document.createElement('div');
+                el.className = 'w-full flex flex-col md:flex-row gap-6 items-center p-6 bg-base-100/70 backdrop-blur-xl border border-base-200/50 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 opacity-0 transform translate-y-8';
+                el.setAttribute('data-reveal', 'true');
+                
+                const imgHTML = pub.image ? `<div class="shrink-0 w-full md:w-64 h-40 overflow-hidden rounded-xl border border-base-200"><img src="${pub.image}" alt="${pub.title}" class="w-full h-full object-cover"></div>` : '';
+                
+                const linksHTML = pub.links ? pub.links.map(l => `<a href="${l.url}" class="text-sm font-medium text-primary hover:underline hover:text-primary-focus mr-4 relative z-10 before:content-['['] after:content-[']']">${l.text}</a>`).join('') : '';
 
-            el.innerHTML = `
-                ${imgHTML}
-                <div class="flex-1 flex flex-col justify-center">
-                    <h3 class="text-xl font-bold text-base-content mb-2">${pub.title}</h3>
-                    <p class="text-base-content/80 text-sm mb-2">${pub.authors}</p>
-                    <p class="text-base-content/60 text-sm font-medium mb-4 italic">${pub.venue}</p>
-                    <div class="flex flex-wrap">${linksHTML}</div>
-                </div>
-            `;
-            pubContainer.appendChild(el);
-        });
+                el.innerHTML = `
+                    ${imgHTML}
+                    <div class="flex-1 flex flex-col justify-center">
+                        <h3 class="text-xl font-bold text-base-content mb-2">${pub.title}</h3>
+                        <p class="text-base-content/80 text-sm mb-2">${pub.authors}</p>
+                        <p class="text-base-content/60 text-sm font-medium mb-4 italic">${pub.venue}</p>
+                        <div class="flex flex-wrap">${linksHTML}</div>
+                    </div>
+                `;
+                pubContainer.appendChild(el);
+            });
+        } else {
+            // Placeholder when no publications exist
+            const placeholder = document.createElement('div');
+            placeholder.className = 'p-6 bg-base-100/30 border border-dashed border-base-200/80 rounded-2xl text-center opacity-0 transform translate-y-8';
+            placeholder.setAttribute('data-reveal', 'true');
+            placeholder.innerHTML = `<p class="text-base-content/60 italic text-lg">Currently working on exciting research... Check back soon!</p>`;
+            pubContainer.appendChild(placeholder);
+        }
     }
 
     // ---- Render Projects ----

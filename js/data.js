@@ -3,19 +3,7 @@ export const newsData = [
     { date: "2025/12", content: "Starting a new journey focusing on Robotics and HCI." },
 ];
 
-export const publicationsData = [
-    {
-        title: "Adaptive Humanoid Control with Minimal Force Feedback",
-        authors: "Hannes Zhang, John Doe, Jane Smith",
-        venue: "ICRA 2026",
-        links: [
-            { text: "Paper", url: "#" },
-            { text: "Code", url: "#" },
-            { text: "Video", url: "#" }
-        ],
-        image: "https://placehold.co/600x400/1f2937/FFFFFF/png?text=ICRA+Paper"
-    }
-];
+export const publicationsData = [];
 
 export const projectsData = [
     {
