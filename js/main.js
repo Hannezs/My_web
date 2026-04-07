@@ -40,16 +40,26 @@ document.addEventListener('DOMContentLoaded', () => {
     if (projContainer) {
         projectsData.forEach(proj => {
             const el = document.createElement('div');
-            el.className = 'p-6 bg-base-100/70 backdrop-blur-xl border border-base-200/50 rounded-2xl shadow-sm hover:-translate-y-2 hover:shadow-xl transition-all duration-300 opacity-0 transform translate-y-8';
+            el.className = 'p-6 bg-base-100/70 backdrop-blur-xl border border-base-200/50 rounded-2xl shadow-sm hover:-translate-y-2 hover:shadow-xl transition-all duration-300 opacity-0 transform translate-y-8 flex flex-col';
             el.setAttribute('data-reveal', 'true');
             
             const techHTML = proj.techStack ? proj.techStack.map(t => `<span class="px-2 py-1 bg-base-200 text-xs rounded-md text-base-content/70 mr-2 mb-2 inline-block">${t}</span>`).join('') : '';
 
+            let mediaHTML = '';
+            if (proj.video) {
+                mediaHTML = `<div class="mb-4 rounded-xl overflow-hidden shadow-sm border border-base-200"><video src="${proj.video}" autoplay loop muted playsinline class="w-full h-auto object-cover aspect-video hover:scale-105 transition-transform duration-500"></video></div>`;
+            } else if (proj.image) {
+                mediaHTML = `<div class="mb-4 rounded-xl overflow-hidden shadow-sm border border-base-200"><img src="${proj.image}" alt="${proj.title}" class="w-full h-auto object-cover aspect-video hover:scale-105 transition-transform duration-500"></div>`;
+            }
+
             el.innerHTML = `
-                <h3 class="text-xl font-bold text-primary mb-3">${proj.title}</h3>
-                <p class="text-base-content/70 text-sm mb-4 leading-relaxed">${proj.description}</p>
-                <div class="mb-4">${techHTML}</div>
-                <a href="${proj.link}" class="text-sm font-semibold text-base-content hover:text-primary transition-colors">View Details →</a>
+                ${mediaHTML}
+                <div class="flex-1 flex flex-col">
+                    <h3 class="text-xl font-bold text-primary mb-3">${proj.title}</h3>
+                    <p class="text-base-content/70 text-sm mb-4 leading-relaxed flex-1">${proj.description}</p>
+                    <div class="mb-4">${techHTML}</div>
+                    <a href="${proj.link}" class="text-sm font-semibold text-base-content hover:text-primary transition-colors mt-auto">View Details →</a>
+                </div>
             `;
             projContainer.appendChild(el);
         });

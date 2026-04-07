@@ -1,7 +1,8 @@
-# Hannes Zhang - Personal Portfolio
+# Hannes Zhang - Personal Portfolio (个人主页)
 
 A lightweight, fast, and data-driven personal portfolio website for Hannes Zhang (张誉怀). Designed with an academic and clean aesthetic, perfect for showcasing research in Embodied Intelligence, Computer Vision, and HCI.
 
+一个轻量级、快速、以数据驱动的个人主页项目，致力于展示具身智能、计算机视觉和人机交互领域的学术研究成果。极简的Apple风格设计。
 ## Features
 - **Performance First:** Built with Vite and Tailwind CSS for rapid development and lightning-fast production builds.
 - **Data-Driven Architecture:** Easily update publications and projects by editing a single JavaScript data file (`js/data.js`), without touching the HTML markup.

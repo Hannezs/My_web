@@ -10,24 +10,28 @@ export const projectsData = [
         title: "Stanford CS231n Solutions",
         description: "Comprehensive solutions to Stanford's Deep Learning for Computer Vision course (CS231n) programming assignments. Implementations include CNNs, RNNs, Attention Mechanisms, and Generative Models using PyTorch and NumPy.",
         techStack: ["Python", "PyTorch", "NumPy", "Deep Learning", "Computer Vision"],
-        link: "https://github.com/Hannezs/cs231n-solutions"
+        link: "https://github.com/Hannezs/cs231n-solutions",
     },
     {
         title: "Knowledge Graph & RAG System",
         description: "An intelligent Q&A and semantic extraction system combining Knowledge Graphs and Retrieval-Augmented Generation (RAG). Supports document upload, automated entity-relation extraction via LLMs, and natural language Q&A powered by vector databases.",
         techStack: ["Vue 3", "FastAPI", "Milvus", "LLMs", "RAG"],
-        link: "https://github.com/Hannezs/Knowledge-Graph-RAG-System"
+        link: "https://github.com/Hannezs/Knowledge-Graph-RAG-System",
+        image: "/images/KG_RAG_demo.png",
+        // video: "/images/sample-video.mp4" // 你可以像这样添加本地或在线的视频链接
     },
     {
         title: "UAV Vision-Based Obstacle Avoidance",
         description: "An autonomous drone flight control system based on AirSim and deep learning. Integrates YOLOv8 for real-time visual perception and PID controllers for state machine-driven obstacle avoidance.",
         techStack: ["Python", "AirSim", "YOLOv8", "OpenCV", "PID Control"],
-        link: "https://github.com/Hannezs/uav-vision-obstacle-avoidance"
+        link: "https://github.com/Hannezs/uav-vision-obstacle-avoidance",
+        video: "/images/uav_demo.mp4"
     },
     {
         title: "Personal Portfolio Website",
         description: "The very website you are browsing! A lightweight, fast, and data-driven portfolio designed with a clean academic aesthetic. Features responsive layouts and pure CSS industrial animations.",
         techStack: ["Vanilla JS", "Tailwind CSS", "Vite", "DaisyUI"],
-        link: "https://github.com/Hannezs/My_web"
+        link: "https://github.com/Hannezs/My_web",
+        image: "/images/web_demo.png"
     }
 ];

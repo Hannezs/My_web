@@ -21,3 +21,10 @@ dist-ssr/
 # Editor
 .vscode/
 .idea/
+
+# Photos and Videos
+images/profile.jpg
+*.mp4
+*.mov
+*.avi
+*.mkv
