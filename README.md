@@ -6,7 +6,7 @@ A lightweight, fast, and data-driven personal portfolio website for Hannes Zhang
 - **Performance First:** Built with Vite and Tailwind CSS for rapid development and lightning-fast production builds.
 - **Data-Driven Architecture:** Easily update publications and projects by editing a single JavaScript data file (`js/data.js`), without touching the HTML markup.
 - **Responsive Design:** Fully responsive layout with mobile-specific optimizations (e.g., hiding complex CSS animations on smaller screens to ensure readability).
-- **Pure CSS Animations:** Engaging industrial robotic arm and drone animations built purely with CSS keyframes, requiring no heavy 3D rendering libraries.
+- **Pure CSS Apple-Style Animations:** Engaging robotic arm, drone, and smart glasses animations built purely with CSS keyframes. Recently redesigned with an elegant "Apple-style" aesthetic (Space Gray, Silver, glassmorphism, and soft shadows) to perfectly blend hard-core tech with minimalist frontend design, requiring no heavy 3D rendering libraries.
 
 ## Tech Stack
 - HTML5 / Vanilla JS
