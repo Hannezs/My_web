@@ -46,7 +46,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const techHTML = proj.techStack ? proj.techStack.map(t => `<span class="px-2 py-1 bg-base-200 text-xs rounded-md text-base-content/70 mr-2 mb-2 inline-block">${t}</span>`).join('') : '';
 
             let mediaHTML = '';
-            if (proj.video) {
+            if (proj.iframe) {
+                mediaHTML = `<div class="mb-4 rounded-xl overflow-hidden shadow-sm border border-base-200 aspect-video"><iframe src="${proj.iframe}" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" class="w-full h-full"></iframe></div>`;
+            } else if (proj.video) {
                 mediaHTML = `<div class="mb-4 rounded-xl overflow-hidden shadow-sm border border-base-200"><video src="${proj.video}" autoplay loop muted playsinline class="w-full h-auto object-cover aspect-video hover:scale-105 transition-transform duration-500"></video></div>`;
             } else if (proj.image) {
                 mediaHTML = `<div class="mb-4 rounded-xl overflow-hidden shadow-sm border border-base-200"><img src="${proj.image}" alt="${proj.title}" class="w-full h-auto object-cover aspect-video hover:scale-105 transition-transform duration-500"></div>`;

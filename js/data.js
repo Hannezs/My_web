@@ -10,7 +10,7 @@ export const projectsData = [
         title: "Stanford CS231n Solutions",
         description: "Comprehensive solutions to Stanford's Deep Learning for Computer Vision course (CS231n) programming assignments. Implementations include CNNs, RNNs, Attention Mechanisms, and Generative Models using PyTorch and NumPy.",
         techStack: ["Python", "PyTorch", "NumPy", "Deep Learning", "Computer Vision"],
-        link: "https://github.com/Hannezs/cs231n-solutions",
+        link: "https://github.com/Hannezs/cs231n-solutions"
     },
     {
         title: "Knowledge Graph & RAG System",
@@ -25,7 +25,7 @@ export const projectsData = [
         description: "An autonomous drone flight control system based on AirSim and deep learning. Integrates YOLOv8 for real-time visual perception and PID controllers for state machine-driven obstacle avoidance.",
         techStack: ["Python", "AirSim", "YOLOv8", "OpenCV", "PID Control"],
         link: "https://github.com/Hannezs/uav-vision-obstacle-avoidance",
-        video: "/images/uav_demo.mp4"
+        iframe: "//player.bilibili.com/player.html?bvid=BV1x4DiBMEcr&high_quality=1&danmaku=0"
     },
     {
         title: "Personal Portfolio Website",
