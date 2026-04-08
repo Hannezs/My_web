@@ -7,10 +7,11 @@ export const publicationsData = [];
 
 export const projectsData = [
     {
-        title: "Stanford CS231n Solutions",
-        description: "Comprehensive solutions to Stanford's Deep Learning for Computer Vision course (CS231n) programming assignments. Implementations include CNNs, RNNs, Attention Mechanisms, and Generative Models using PyTorch and NumPy.",
-        techStack: ["Python", "PyTorch", "NumPy", "Deep Learning", "Computer Vision"],
-        link: "https://github.com/Hannezs/cs231n-solutions"
+        title: "Turbid-AI",
+        description: "TurbidAI is an AI-powered, full-stack IoT system designed for water quality monitoring and analysis, specifically focusing on turbidity testing and reporting. It seamlessly integrates custom IoT hardware, a robust backend API, a modern frontend dashboard, and AI-driven workflows.",
+        techStack: ["Vue 3", "Spring Boot", "C++", "Docker", "Dify"],
+        link: "https://github.com/Hannezs/Turbid-AI",
+        image :"/images/TurbidAI.png",
     },
     {
         title: "Knowledge Graph & RAG System",
@@ -33,5 +34,11 @@ export const projectsData = [
         techStack: ["Vanilla JS", "Tailwind CSS", "Vite", "DaisyUI"],
         link: "https://github.com/Hannezs/My_web",
         image: "/images/web_demo.png"
-    }
+    },
+    {
+        title: "Stanford CS231n Solutions",
+        description: "Comprehensive solutions to Stanford's Deep Learning for Computer Vision course (CS231n) programming assignments. Implementations include CNNs, RNNs, Attention Mechanisms, and Generative Models using PyTorch and NumPy.",
+        techStack: ["Python", "PyTorch", "NumPy", "Deep Learning", "Computer Vision"],
+        link: "https://github.com/Hannezs/cs231n-solutions"
+    },
 ];
