@@ -46,6 +46,6 @@ export const projectsData = [
         description: "A bioinformatics and machine learning pipeline based on TCGA multi-omics data for Stomach Adenocarcinoma (STAD). Integrates transcriptomics, miRNA, DNA methylation, and clinical data to discover novel molecular subtypes via SNF consensus clustering and extracts minimal diagnostic biomarkers using LASSO and Random Forest.",
         techStack: ["Python", "Machine Learning", "Bioinformatics", "scikit-learn", "snfpy"],
         link: "https://github.com/Hannezs/TCGA-STAD-Multiomics-Subtyping",
-        image:"/images/Classifier_Evaluation_ROC_CM.png"
+        image: "/images/Classifier_Evaluation_ROC_CM.png",
     },
 ];
